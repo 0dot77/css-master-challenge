@@ -1,16 +1,24 @@
-.wrapper {
+.father {
   display: flex;
-  flex-direction: column;
+
   /* Main Axis */
-  justify-content: center;
-  /* Cross Axis */
-  align-items: stretch;
+  justify-content: space-around;
+
   height: 100vh;
 }
 
-.box {
-  /* width: 200px; */
+.child {
+  flex-basis: 300px;
   height: 200px;
   background: blue;
   color: white;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child:nth-child(2) {
+  background: black;
+  flex-grow: 1;
 }
